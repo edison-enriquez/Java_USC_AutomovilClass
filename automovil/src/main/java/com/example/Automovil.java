@@ -33,6 +33,7 @@ public class Automovil {
     private int cilidraje;
     private TipoCombustible tipocCombustible;
     private TipoAutomovil tipoAutomovil;
+    private Color color;
     private int numPuertas;
     private int numAsientos;
     private int velocidadMax;
@@ -166,6 +167,12 @@ public class Automovil {
     public void frenar(){
         this.velocidadActual = 0;
     }
+
+    public void frenar(String mensaje){
+        this.velocidadActual = 0;
+        System.out.println(mensaje);
+    }
+
 
     public void calcularLlegada(int distancia){
         if(this.velocidadActual == 0){
